@@ -1,0 +1,94 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title Pizza Counter
+    meta(name='author', content='Andrew')
+    meta(name='description', content='This is the home page for pizza')
+    meta(name='keywords', content='pizza, counter, node, express, mongodb, groupme, bot')
+    script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+    script(src='webscript.js', type='text/javascript')
+    // Google font
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800', rel='stylesheet')
+    // flexbox
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css', rel='stylesheet')
+    link(rel='stylesheet', href='stylesheet.css', type='text/css')
+  body
+    #main
+      #content
+        #leftArrow.arrow
+          svg#leftArrowSVG.arrowSVG(height='62', width='32')
+            line(x1='0', y1='31', x2='30', y2='2', style='stroke:rgb(200, 200, 200);stroke-width:3')
+            line(x1='0', y1='29', x2='30', y2='58', style='stroke:rgb(200, 200, 200);stroke-width:3')
+        include /winnerModule.jade
+        include /houseModule.jade
+        #rightArrow.arrow
+          svg#rightArrowSVG.arrowSVG(height='62', width='32')
+            line(x1='30', y1='31', x2='0', y2='2', style='stroke:rgb(200, 200, 200);stroke-width:3')
+            line(x1='30', y1='29', x2='0', y2='58', style='stroke:rgb(200, 200, 200);stroke-width:3')
+        #carouselNav
+          svg#carouselPagination(width='100px', height='20px')
+            rect#one.active(x='10px', y='5px', width='1.5vw', height='.3vw')
+            rect#two.inactive(x='35px', y='5px', width='1.5vw', height='.3vw')
+    #bottom
+      #flexcontainer
+        #flexChild1.flexChild
+          p.rank 2nd:
+          p#name2.name #{secondName}
+          svg.nameBreak(width='19vw', height='.3vw')
+            rect.nameBreakSVG(width='19vw', height='.2vw')
+          p#pizzaStat1.pizzaStat Pizzas Consumed: #{secondCount} / #{secondCountYR} per year
+          p#ovenStat1.Stat Total oven time: #{secondHours} minutes / #{secondHoursYR} minutes per year
+          p#moneyStat1.Stat Money spent on pizza: $#{secondDollars} / $#{secondDollarsYR} per year
+          p#caloriesStat1.Stat Calories Consumed: #{secondCal} / #{secondCalYR} cal per year
+          p#rate1.Stat Pizza rate/day: #{secondRate}
+        #flexChild2.flexChild
+          p.rank 3rd:
+          p#name2.name #{thirdName}
+          svg.nameBreak(width='19vw', height='.3vw')
+            rect.nameBreakSVG(width='19vw', height='.2vw')
+          p#pizzaStat2.pizzaStat Pizzas Consumed: #{thirdCount} / #{thirdCountYR} per year
+          p#ovenStat2.Stat Total oven time: #{thirdHours} minutes / #{thirdHoursYR} minutes per year
+          p#moneyStat2.Stat Money spent on pizza: $#{thirdDollars} / $#{thirdDollarsYR} per year
+          p#caloriesStat2.Stat Calories Consumed: #{thirdCal} / #{thirdCalYR} cal per year
+          p#rate1.Stat Pizza rate/day: #{thirdRate}
+        #flexChild3.flexChild
+          p.rank 4th:
+          p#name3.name #{fourthName}
+          svg.nameBreak(width='19vw', height='.3vw')
+            rect.nameBreakSVG(width='19vw', height='.2vw')
+          p#pizzaStat3.pizzaStat Pizzas Consumed: #{fourthCount} / #{fourthCountYR} per year
+          p#ovenStat3.Stat Total oven time: #{fourthHours} minutes / #{fourthHoursYR} minutes per year
+          p#moneyStat3.Stat Money spent on pizza: $#{fourthDollars} / $#{fourthDollarsYR} per year
+          p#caloriesStat3.Stat Calories Consumed: #{fourthCal} / #{fourthCalYR} cal per year
+          p#rate1.Stat Pizza rate/day: #{fourthRate}
+        #flexChild4.flexChild
+            p.rank 5th:
+            p#name4.name #{fifthName}
+            svg.nameBreak(width='19vw', height='.3vw')
+              rect.nameBreakSVG(width='19vw', height='.2vw')
+            p#pizzaStat4.pizzaStat Pizzas Consumed: #{fifthCount} / #{fifthCountYR} per year
+            p#ovenStat4.Stat Total oven time: #{fifthHours} minutes / #{fifthHoursYR} minutes per year
+            p#moneyStat4.Stat Money spent on pizza: $#{fifthDollars} / $#{fifthDollarsYR} per year
+            p#caloriesStat4.Stat Calories Consumed: #{fifthCal} / #{fifthCalYR} cal per year
+            p#rate1.Stat Pizza rate/day: #{fifthRate}
+        #flexChild5.flexChild
+          p.rank 6th:
+          p#name5.name #{sixthName}
+          svg.nameBreak(width='19vw', height='.3vw')
+            rect.nameBreakSVG(width='19vw', height='.2vw')
+          p#pizzaStat5.pizzaStat Pizzas Consumed: #{sixthCount} / #{sixthCountYR} per year
+          p#ovenStat5.Stat Total oven time: #{sixthHours} minutes / #{sixthHoursYR} minutes per year
+          p#moneyStat5.Stat Money spent on pizza: $#{sixthDollars} / $#{sixthDollarsYR} per year
+          p#caloriesStat5.Stat Calories Consumed: #{sixthCal} / #{sixthCalYR} cal per year
+          p#rate1.Stat Pizza rate/day: #{sixthRate}
+        #flexChild6.flexChild
+          p.rank Last:
+          p#name6.name #{lastName}
+          svg.nameBreak(width='19vw', height='.3vw')
+            rect.nameBreakSVG(width='19vw', height='.2vw')
+          p#pizzaStat6.pizzaStat Pizzas Consumed: #{lastCount} / #{lastCountYR} per year
+          p#ovenStat6.Stat Total oven time: #{lastHours} minutes / #{lastHoursYR} minutes per year
+          p#moneyStat6.Stat Money spent on pizza: $#{lastDollarsFIX} / $#{lastDollarsYR} per year
+          p#caloriesStat6.Stat Calories Consumed: #{lastCal} / #{lastCalYR} cal per year
+          p#rate1.Stat Pizza rate/day: #{lastRate}

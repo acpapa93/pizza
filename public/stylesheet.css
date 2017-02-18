@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size:1.5vw;
+    color: rgb(75, 75, 75);
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+#bottom{
+  width:100vw;
+  height:100%;
+  background-color:rgb(62, 49, 43);
+}
+#main{
+  display:block;
+  top:0;
+  margin: 0 0 0 0;
+  width:100vw;
+  height:40vw;
+}
+
+#content{
+position:relative;
+text-align:center;
+width:100vw;
+height:100%;
+display:inline-block;
+
+}
+.hidden{
+  visibility:hidden;
+}
+.visibile{
+  visibility:visible;
+}
+
+#pizzaPics1{
+  position:absolute;
+  display:inline;
+  top:10vw;
+  left:24vw;
+  text-align:left;
+}
+
+#pizzaPics2{
+  position:absolute;
+  display:inline;
+  top:11vw;
+  left:24vw;
+}
+
+#top1{
+  display:inline;
+  text-align:left;
+  position:absolute;
+  top:12vw;
+  left:45vw;
+}
+
+#top2{
+  display:inline;
+  text-align:left;
+  position:absolute;
+  top:15.5vw;
+  left:45vw;
+}
+
+img#pizza{
+  width:20vw;
+  height:auto;
+  display:inline;
+}
+img#pizza2{
+  display:inline;
+  width:19vw;
+  height:auto;
+}
+
+
+#statGroup{
+  text-align:left;
+  display:block;
+  position:relative;
+
+}
+
+#top2pizzaCount{
+  font-weight:300;
+  font-size:2vw;
+  margin: .5vw 0 1.5vw 0;
+  line-height:85%;
+  color:rgb(255,84,84);
+
+}
+svg#carouselPagination{
+  text-align:center;
+
+}
+
+.active{
+  fill:rgb(105, 105, 105);
+
+}
+
+.inactive{
+  fill:rgb(182, 182, 182)
+}
+
+#title{
+  font-weight: 300;
+  font-size:2vw;
+  margin: 0 0 0 0;
+  position:relative;
+  line-height: 95%
+
+}
+#title3{
+  font-weight:300;
+  font-size:1.9vw;
+  margin:0 0 .4vw 0;
+  position: relative;
+  text-transform: uppercase;
+  color:rgb(121, 121, 121);
+  line-height:95%;
+
+}
+#winnerForecast{
+  color:rgb(255, 84, 84);
+  font-weight:300;
+  font-size:2.3vw;
+  margin: 0 0 1vw 0;
+line-height: 95%;
+}
+
+#winnerName{
+  font-weight:400;
+  font-size:5vw;
+  margin: 0 0 0 0;
+  color:rgb(255, 84, 84);
+  line-height: 85%;
+  text-transform:uppercase;
+}
+#pizzaCount{
+  font-weight:300;
+  font-size:1.5vw;
+  margin: 1vw 0 1.5vw 0;
+  line-height:85%;
+}
+
+.stats{
+  font-weight:300;
+  font-size:1.3vw;
+  margin: 0 0 .4vw 0;
+  line-height:95%;
+}
+#flexcontainer{
+
+  margin:0 7vw 4vw 8vw;
+  width:85vw;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: flex-start;
+  align:flex-start;
+
+}
+
+.flexChild{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis:30%;
+  text-align:left;
+  margin:3vw 1vw 3vw 1vw;
+  color:white;
+}
+
+.rank{
+display:inline-block;
+font-size:1.7vw;
+font-weight: 300;
+color:rgb(255, 186, 82);
+margin:0vw 0vw .1vw 0;
+}
+.name{
+  position:relative;
+  display: inline-block;
+  font-size:1.7vw;
+  font-weight:300;
+  color:rgb(255, 84, 84);
+  margin:0 0 .1vw .2vw;
+  text-transform:uppercase;
+}
+.nameBreak{
+  display:block;
+}
+.nameBreakSVG{
+  fill:rgb(255,84,84);
+}
+.pizzaStat{
+  font-size:1.2vw;
+  margin:1vw 0 0 0;
+  position:relative;
+  top:-.5vw;
+}
+
+.Stat{
+  font-weight:300;
+  font-size:1.1vw;
+  position:relative;
+  margin:0 0 .25vw 0;
+  color: rgb(209, 209, 209);
+}
+
+#carouselNav{
+  position:absolute;
+  top:34vw;
+  right:47vw;
+}
+
+
+.arrow{
+  display:inline-block;
+  width:13vw;
+  height:100%;
+  position:absolute;
+}
+.arrow:hover{
+  cursor:pointer;
+}
+#leftArrow{
+left:0vw;
+}
+#leftArrow:hover{
+  background:linear-gradient(90deg, rgb(231, 231, 231), white);
+
+}
+#rightArrow{
+  right:0;
+}
+#rightArrow:hover{
+  background:linear-gradient(90deg, white, rgb(231, 231, 231));
+
+}
+
+.arrowSVG{
+  position:relative;
+  top:17vw;
+}
+
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+
+  .flexChild{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis:90%;
+    text-align:center;
+    margin: .5vw .5vw .5vw .5vw;
+  }
+  .nameBreak{
+    text-align:center;
+    position:relative;
+    margin: 0 40vw 0 40vw;
+  }
+  .nameBreakSVG{
+    text-align:center;
+    display:inline-block;
+  }
+}

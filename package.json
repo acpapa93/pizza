@@ -1,0 +1,30 @@
+{
+  "name": "pizza",
+  "version": "0.1.2",
+  "description": "GroupMe Bot that counts pizza. It stores the pizza count on mongodb.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cool-ascii-faces": "~1.3.x",
+    "director": "",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.19",
+    "request": "2.79.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acpapa93/pizza.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
